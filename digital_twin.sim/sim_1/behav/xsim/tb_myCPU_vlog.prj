@@ -1,0 +1,42 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../digital_twin.gen/sources_1/ip/pll" \
+"../../../../digital_twin.gen/sources_1/ip/DRAM/sim/DRAM.v" \
+"../../../../digital_twin.gen/sources_1/ip/IROM/sim/IROM.v" \
+"../../../../digital_twin.gen/sources_1/ip/pll/pll_clk_wiz.v" \
+"../../../../digital_twin.gen/sources_1/ip/pll/pll.v" \
+
+sv xil_defaultlib  --include "../../../../digital_twin.gen/sources_1/ip/pll" \
+"../../../../digital_twin.srcs/sources_1/imports/new/new2brand/EX_moment.sv" \
+"../../../../digital_twin.srcs/sources_1/imports/new/new2brand/ID_moment.sv" \
+"../../../../digital_twin.srcs/sources_1/imports/new/new2brand/IF_moment.sv" \
+"../../../../digital_twin.srcs/sources_1/imports/new/new2brand/MM_moment.sv" \
+"../../../../digital_twin.srcs/sources_1/imports/new/new2brand/MYCPU.sv" \
+"../../../../digital_twin.srcs/sources_1/imports/new/new2brand/PC_control.sv" \
+"../../../../digital_twin.srcs/sources_1/imports/new/new2brand/WB_moment.sv" \
+"../../../../digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" \
+"../../../../digital_twin.srcs/sources_1/imports/new/new2brand/alu_control.sv" \
+"../../../../digital_twin.srcs/sources_1/imports/new/new2brand/controller.sv" \
+"../../../../digital_twin.srcs/sources_1/new/counter.sv" \
+"../../../../digital_twin.srcs/sources_1/new/display_seg.sv" \
+"../../../../digital_twin.srcs/sources_1/new/dram_driver.sv" \
+"../../../../digital_twin.srcs/sources_1/imports/new/new2brand/ex_mm_transition.sv" \
+"../../../../digital_twin.srcs/sources_1/imports/new/new2brand/forward.sv" \
+"../../../../digital_twin.srcs/sources_1/imports/new/new2brand/hard_check.sv" \
+"../../../../digital_twin.srcs/sources_1/imports/new/new2brand/id_ex_transition.sv" \
+"../../../../digital_twin.srcs/sources_1/imports/new/new2brand/if_id_transition.sv" \
+"../../../../digital_twin.srcs/sources_1/imports/new/new2brand/immgen.sv" \
+"../../../../digital_twin.srcs/sources_1/imports/new/new2brand/mm_wb_transition.sv" \
+"../../../../digital_twin.srcs/sources_1/new/perip_bridge.sv" \
+"../../../../digital_twin.srcs/sources_1/imports/new/new2brand/regs.sv" \
+"../../../../digital_twin.srcs/sources_1/new/seg7.sv" \
+"../../../../digital_twin.srcs/sources_1/new/student_top.sv" \
+"../../../../digital_twin.srcs/sources_1/new/top.sv" \
+"../../../../digital_twin.srcs/sources_1/new/twin_controller.sv" \
+"../../../../digital_twin.srcs/sources_1/new/uart.sv" \
+"../../../../digital_twin.srcs/sim_1/new/tb_myCPU.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

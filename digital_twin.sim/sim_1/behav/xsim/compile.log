@@ -1,0 +1,69 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.gen/sources_1/ip/DRAM/sim/DRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.gen/sources_1/ip/IROM/sim/IROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.gen/sources_1/ip/pll/pll_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.gen/sources_1/ip/pll/pll.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/EX_moment.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_moment
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/ID_moment.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_moment
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/IF_moment.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_moment
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/MM_moment.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MM_moment
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/MYCPU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MYCPU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/PC_control.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/WB_moment.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB_moment
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-311] analyzing module adder_alu
+INFO: [VRFC 10-311] analyzing module sub_alu
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-311] analyzing module adder_single
+INFO: [VRFC 10-311] analyzing module adder_half
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu_control.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/new/counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/new/display_seg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display_seg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/new/dram_driver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dram_driver
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/ex_mm_transition.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ex_mm_transition
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/forward.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module forward
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/hard_check.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hard_check
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/id_ex_transition.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id_ex_transition
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/if_id_transition.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module if_id_transition
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/immgen.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module immgen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/mm_wb_transition.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mm_wb_transition
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/new/perip_bridge.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module perip_bridge
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/regs.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regs
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/new/seg7.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/new/student_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module student_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/new/top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/new/twin_controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module twin_controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/new/uart.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sim_1/new/tb_myCPU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_myCPU

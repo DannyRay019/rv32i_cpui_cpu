@@ -1,0 +1,25 @@
+
+*** Running vivado
+    with args -log DRAM.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source DRAM.tcl
+
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source DRAM.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 566.445 ; gain = 180.547
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: DRAM
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry bc54636b5c628c64 to dir: D:/danny/cs2025_v2-stu/digital_twin/digital_twin.runs/DRAM_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file d:/danny/cs2025_v2-stu/digital_twin/digital_twin.cache/ip/2023.2/b/c/bc54636b5c628c64/DRAM.dcp to D:/danny/cs2025_v2-stu/digital_twin/digital_twin.runs/DRAM_synth_1/DRAM.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file d:/danny/cs2025_v2-stu/digital_twin/digital_twin.cache/ip/2023.2/b/c/bc54636b5c628c64/DRAM_sim_netlist.v to D:/danny/cs2025_v2-stu/digital_twin/digital_twin.runs/DRAM_synth_1/DRAM_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file d:/danny/cs2025_v2-stu/digital_twin/digital_twin.cache/ip/2023.2/b/c/bc54636b5c628c64/DRAM_sim_netlist.vhdl to D:/danny/cs2025_v2-stu/digital_twin/digital_twin.runs/DRAM_synth_1/DRAM_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file d:/danny/cs2025_v2-stu/digital_twin/digital_twin.cache/ip/2023.2/b/c/bc54636b5c628c64/DRAM_stub.v to D:/danny/cs2025_v2-stu/digital_twin/digital_twin.runs/DRAM_synth_1/DRAM_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file d:/danny/cs2025_v2-stu/digital_twin/digital_twin.cache/ip/2023.2/b/c/bc54636b5c628c64/DRAM_stub.vhdl to D:/danny/cs2025_v2-stu/digital_twin/digital_twin.runs/DRAM_synth_1/DRAM_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP DRAM, cache-ID = bc54636b5c628c64.
+config_ip_cache: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 667.324 ; gain = 87.672
+INFO: [Common 17-206] Exiting Vivado at Wed May 14 20:36:13 2025...

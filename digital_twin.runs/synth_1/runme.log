@@ -1,0 +1,506 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 567.125 ; gain = 183.891
+Command: read_checkpoint -auto_incremental -incremental D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/utils_1/imports/synth_1/top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7k325tffg900-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 25712
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1471.973 ; gain = 439.559
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'mm_RegWrite', assumed default net type 'wire' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/MYCPU.sv:262]
+INFO: [Synth 8-11241] undeclared symbol 'wb_MemWrite', assumed default net type 'wire' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/MYCPU.sv:310]
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/new/top.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'pll' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.runs/synth_1/.Xil/Vivado-15612-LAPTOP-TANMSLN6/realtime/pll_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pll' (0#1) [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.runs/synth_1/.Xil/Vivado-15612-LAPTOP-TANMSLN6/realtime/pll_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'uart' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/new/uart.sv:22]
+	Parameter CLK_FREQ bound to: 50000000 - type: integer 
+	Parameter BAUD_RATE bound to: 9600 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/new/uart.sv:72]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/new/uart.sv:147]
+INFO: [Synth 8-6155] done synthesizing module 'uart' (0#1) [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/new/uart.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'twin_controller' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/new/twin_controller.sv:23]
+INFO: [Synth 8-226] default block is never used [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/new/twin_controller.sv:64]
+INFO: [Synth 8-6155] done synthesizing module 'twin_controller' (0#1) [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/new/twin_controller.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'student_top' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/new/student_top.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'MYCPU' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/MYCPU.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'IF_moment' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/IF_moment.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'PC_control' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/PC_control.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'PC_control' (0#1) [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/PC_control.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'IF_moment' (0#1) [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/IF_moment.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'if_id_transition' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/if_id_transition.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'if_id_transition' (0#1) [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/if_id_transition.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'ID_moment' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/ID_moment.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'regs' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/regs.sv:4]
+	Parameter ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter DATAWIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'regs' (0#1) [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/regs.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'immgen' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/immgen.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'immgen' (0#1) [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/immgen.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'controller' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/controller.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (0#1) [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/controller.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'alu_control' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu_control.sv:1]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu_control.sv:14]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu_control.sv:29]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu_control.sv:37]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu_control.sv:50]
+INFO: [Synth 8-6155] done synthesizing module 'alu_control' (0#1) [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu_control.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'ID_moment' (0#1) [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/ID_moment.sv:2]
+WARNING: [Synth 8-689] width (5) of port connection 'id_funct' does not match port width (4) of module 'ID_moment' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/MYCPU.sv:155]
+INFO: [Synth 8-6157] synthesizing module 'id_ex_transition' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/id_ex_transition.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'id_ex_transition' (0#1) [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/id_ex_transition.sv:1]
+WARNING: [Synth 8-689] width (5) of port connection 'id_funct' does not match port width (4) of module 'id_ex_transition' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/MYCPU.sv:180]
+WARNING: [Synth 8-689] width (10) of port connection 'ex_funct' does not match port width (4) of module 'id_ex_transition' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/MYCPU.sv:201]
+INFO: [Synth 8-6157] synthesizing module 'EX_moment' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/EX_moment.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'alu' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'adder_alu' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv:85]
+	Parameter DATAWIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'adder_single' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv:167]
+INFO: [Synth 8-6157] synthesizing module 'adder_half' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv:196]
+INFO: [Synth 8-6155] done synthesizing module 'adder_half' (0#1) [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv:196]
+INFO: [Synth 8-6155] done synthesizing module 'adder_single' (0#1) [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv:167]
+INFO: [Synth 8-6155] done synthesizing module 'adder_alu' (0#1) [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv:85]
+INFO: [Synth 8-6157] synthesizing module 'sub_alu' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv:113]
+	Parameter DATAWIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'adder_alu__parameterized0' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv:85]
+INFO: [Synth 8-6155] done synthesizing module 'adder_alu__parameterized0' (0#1) [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv:85]
+INFO: [Synth 8-6155] done synthesizing module 'sub_alu' (0#1) [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv:113]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv:4]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/EX_moment.sv:90]
+INFO: [Synth 8-6155] done synthesizing module 'EX_moment' (0#1) [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/EX_moment.sv:1]
+WARNING: [Synth 8-689] width (10) of port connection 'ex_funct' does not match port width (4) of module 'EX_moment' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/MYCPU.sv:224]
+INFO: [Synth 8-6157] synthesizing module 'ex_mm_transition' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/ex_mm_transition.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'ex_mm_transition' (0#1) [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/ex_mm_transition.sv:1]
+WARNING: [Synth 8-689] width (10) of port connection 'ex_funct' does not match port width (4) of module 'ex_mm_transition' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/MYCPU.sv:254]
+INFO: [Synth 8-6157] synthesizing module 'MM_moment' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/MM_moment.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'MM_moment' (0#1) [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/MM_moment.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'mm_wb_transition' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/mm_wb_transition.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'mm_wb_transition' (0#1) [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/mm_wb_transition.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'WB_moment' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/WB_moment.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'WB_moment' (0#1) [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/WB_moment.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'forward' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/forward.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'forward' (0#1) [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/forward.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'hard_check' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/hard_check.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'hard_check' (0#1) [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/hard_check.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'MYCPU' (0#1) [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/MYCPU.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'IROM' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.runs/synth_1/.Xil/Vivado-15612-LAPTOP-TANMSLN6/realtime/IROM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'IROM' (0#1) [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.runs/synth_1/.Xil/Vivado-15612-LAPTOP-TANMSLN6/realtime/IROM_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'perip_bridge' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/new/perip_bridge.sv:22]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/new/perip_bridge.sv:56]
+INFO: [Synth 8-6157] synthesizing module 'display_seg' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/new/display_seg.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'seg7' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/new/seg7.sv:23]
+INFO: [Synth 8-226] default block is never used [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/new/seg7.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'seg7' (0#1) [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/new/seg7.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'display_seg' (0#1) [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/new/display_seg.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'dram_driver' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/new/dram_driver.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'DRAM' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.runs/synth_1/.Xil/Vivado-15612-LAPTOP-TANMSLN6/realtime/DRAM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'DRAM' (0#1) [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.runs/synth_1/.Xil/Vivado-15612-LAPTOP-TANMSLN6/realtime/DRAM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dram_driver' (0#1) [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/new/dram_driver.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'counter' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/new/counter.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/new/counter.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'perip_bridge' (0#1) [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/new/perip_bridge.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'student_top' (0#1) [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/new/student_top.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/new/top.sv:23]
+WARNING: [Synth 8-7129] Port wb_funct[3] in module WB_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_offset[1] in module WB_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_offset[0] in module WB_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm_imm_num[31] in module MM_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm_imm_num[30] in module MM_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm_imm_num[29] in module MM_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm_imm_num[28] in module MM_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm_imm_num[27] in module MM_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm_imm_num[26] in module MM_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm_imm_num[25] in module MM_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm_imm_num[24] in module MM_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm_imm_num[23] in module MM_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm_imm_num[22] in module MM_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm_imm_num[21] in module MM_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm_imm_num[20] in module MM_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm_imm_num[19] in module MM_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm_imm_num[18] in module MM_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm_imm_num[17] in module MM_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm_imm_num[16] in module MM_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm_imm_num[15] in module MM_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm_imm_num[14] in module MM_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm_imm_num[13] in module MM_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm_imm_num[12] in module MM_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm_imm_num[11] in module MM_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm_imm_num[10] in module MM_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm_imm_num[9] in module MM_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm_imm_num[8] in module MM_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm_imm_num[7] in module MM_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm_imm_num[6] in module MM_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm_imm_num[5] in module MM_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm_imm_num[4] in module MM_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm_imm_num[3] in module MM_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm_imm_num[2] in module MM_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm_imm_num[1] in module MM_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm_imm_num[0] in module MM_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm_RegWrite in module MM_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm_MemToReg[1] in module MM_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm_MemToReg[0] in module MM_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm_funct[3] in module MM_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm_funct[2] in module MM_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module EX_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module EX_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rs1[4] in module EX_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rs1[3] in module EX_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rs1[2] in module EX_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rs1[1] in module EX_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rs1[0] in module EX_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rs2[4] in module EX_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rs2[3] in module EX_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rs2[2] in module EX_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rs2[1] in module EX_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rs2[0] in module EX_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_funct[3] in module EX_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_funct[2] in module EX_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_funct[1] in module EX_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_funct[0] in module EX_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rd_num[4] in module EX_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rd_num[3] in module EX_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rd_num[2] in module EX_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rd_num[1] in module EX_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rd_num[0] in module EX_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_RegWrite in module EX_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_MemToReg[1] in module EX_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_MemToReg[0] in module EX_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_MemWrite in module EX_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_OffsetOrigin in module EX_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_isBranch in module EX_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_pc[31] in module ID_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_pc[30] in module ID_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_pc[29] in module ID_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_pc[28] in module ID_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_pc[27] in module ID_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_pc[26] in module ID_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_pc[25] in module ID_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_pc[24] in module ID_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_pc[23] in module ID_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_pc[22] in module ID_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_pc[21] in module ID_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_pc[20] in module ID_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_pc[19] in module ID_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_pc[18] in module ID_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_pc[17] in module ID_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_pc[16] in module ID_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_pc[15] in module ID_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_pc[14] in module ID_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_pc[13] in module ID_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_pc[12] in module ID_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_pc[11] in module ID_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_pc[10] in module ID_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_pc[9] in module ID_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_pc[8] in module ID_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_pc[7] in module ID_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_pc[6] in module ID_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_pc[5] in module ID_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_pc[4] in module ID_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_pc[3] in module ID_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_pc[2] in module ID_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_pc[1] in module ID_moment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_pc[0] in module ID_moment is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1593.043 ; gain = 560.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1593.043 ; gain = 560.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1593.043 ; gain = 560.629
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1593.043 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/danny/cs2025_v2-stu/digital_twin/digital_twin.gen/sources_1/ip/pll/pll/pll_in_context.xdc] for cell 'pll_inst'
+Finished Parsing XDC File [d:/danny/cs2025_v2-stu/digital_twin/digital_twin.gen/sources_1/ip/pll/pll/pll_in_context.xdc] for cell 'pll_inst'
+Parsing XDC File [d:/danny/cs2025_v2-stu/digital_twin/digital_twin.gen/sources_1/ip/IROM/IROM/IROM_in_context.xdc] for cell 'student_top_inst/Mem_IROM'
+Finished Parsing XDC File [d:/danny/cs2025_v2-stu/digital_twin/digital_twin.gen/sources_1/ip/IROM/IROM/IROM_in_context.xdc] for cell 'student_top_inst/Mem_IROM'
+Parsing XDC File [d:/danny/cs2025_v2-stu/digital_twin/digital_twin.gen/sources_1/ip/DRAM/DRAM/DRAM_in_context.xdc] for cell 'student_top_inst/bridge_inst/dram_driver_inst/Mem_DRAM'
+Finished Parsing XDC File [d:/danny/cs2025_v2-stu/digital_twin/digital_twin.gen/sources_1/ip/DRAM/DRAM/DRAM_in_context.xdc] for cell 'student_top_inst/bridge_inst/dram_driver_inst/Mem_DRAM'
+Parsing XDC File [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/constrs_1/new/digital_twin.xdc]
+Finished Parsing XDC File [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/constrs_1/new/digital_twin.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/constrs_1/new/digital_twin.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1669.215 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+系统找不到指定的路径。
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1669.215 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'student_top_inst/bridge_inst/dram_driver_inst/Mem_DRAM' at clock pin 'clk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1671.961 ; gain = 639.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1671.961 ; gain = 639.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for i_sys_clk_n. (constraint file  d:/danny/cs2025_v2-stu/digital_twin/digital_twin.gen/sources_1/ip/pll/pll/pll_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for i_sys_clk_n. (constraint file  d:/danny/cs2025_v2-stu/digital_twin/digital_twin.gen/sources_1/ip/pll/pll/pll_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for i_sys_clk_p. (constraint file  d:/danny/cs2025_v2-stu/digital_twin/digital_twin.gen/sources_1/ip/pll/pll/pll_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for i_sys_clk_p. (constraint file  d:/danny/cs2025_v2-stu/digital_twin/digital_twin.gen/sources_1/ip/pll/pll/pll_in_context.xdc, line 7).
+Applied set_property KEEP_HIERARCHY = SOFT for pll_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for student_top_inst/Mem_IROM. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for student_top_inst/bridge_inst/dram_driver_inst/Mem_DRAM. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1671.961 ; gain = 639.547
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'rx_state_reg' in module 'uart'
+INFO: [Synth 8-802] inferred FSM for state register 'tx_state_reg' in module 'uart'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+                 iSTATE0 |                               01 |                               01
+                 iSTATE1 |                               10 |                               10
+                 iSTATE2 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rx_state_reg' using encoding 'sequential' in module 'uart'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                                0 |                             0000
+                 iSTATE0 |                                1 |                             0001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'tx_state_reg' using encoding 'sequential' in module 'uart'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1671.961 ; gain = 639.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 5     
+	   2 Input   13 Bit       Adders := 3     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 192   
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 48    
+	               16 Bit    Registers := 1     
+	               13 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 22    
+	                5 Bit    Registers := 8     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 21    
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 16    
+	   6 Input   32 Bit        Muxes := 2     
+	   3 Input   32 Bit        Muxes := 2     
+	   4 Input   32 Bit        Muxes := 7     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 4     
+	   4 Input   13 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 4     
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 4     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 7     
+	  10 Input    4 Bit        Muxes := 1     
+	   7 Input    4 Bit        Muxes := 1     
+	   6 Input    4 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 1     
+	  10 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 2     
+	  10 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 60    
+	   4 Input    1 Bit        Muxes := 6     
+	   3 Input    1 Bit        Muxes := 3     
+	  10 Input    1 Bit        Muxes := 4     
+	   6 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 1671.961 ; gain = 639.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:04 ; elapsed = 00:01:09 . Memory (MB): peak = 1671.961 ; gain = 639.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:39 ; elapsed = 00:01:48 . Memory (MB): peak = 1893.789 ; gain = 861.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:42 ; elapsed = 00:01:52 . Memory (MB): peak = 1893.789 ; gain = 861.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:52 ; elapsed = 00:02:02 . Memory (MB): peak = 1893.789 ; gain = 861.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:52 ; elapsed = 00:02:02 . Memory (MB): peak = 1893.789 ; gain = 861.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:53 ; elapsed = 00:02:03 . Memory (MB): peak = 1893.789 ; gain = 861.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:53 ; elapsed = 00:02:03 . Memory (MB): peak = 1893.789 ; gain = 861.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:53 ; elapsed = 00:02:03 . Memory (MB): peak = 1893.789 ; gain = 861.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:53 ; elapsed = 00:02:03 . Memory (MB): peak = 1893.789 ; gain = 861.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |pll           |         1|
+|2     |IROM          |         1|
+|3     |DRAM          |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |DRAM   |     1|
+|2     |IROM   |     1|
+|3     |pll    |     1|
+|4     |CARRY4 |    63|
+|5     |LUT1   |    30|
+|6     |LUT2   |   338|
+|7     |LUT3   |   163|
+|8     |LUT4   |   232|
+|9     |LUT5   |   275|
+|10    |LUT6   |  1310|
+|11    |MUXF7  |   276|
+|12    |MUXF8  |   136|
+|13    |FDCE   |  1773|
+|14    |FDPE   |    14|
+|15    |FDRE   |   114|
+|16    |IBUF   |     1|
+|17    |OBUF   |    73|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:53 ; elapsed = 00:02:04 . Memory (MB): peak = 1893.789 ; gain = 861.375
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:47 ; elapsed = 00:02:02 . Memory (MB): peak = 1893.789 ; gain = 782.457
+Synthesis Optimization Complete : Time (s): cpu = 00:01:54 ; elapsed = 00:02:04 . Memory (MB): peak = 1893.789 ; gain = 861.375
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.112 . Memory (MB): peak = 1893.789 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 475 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1898.023 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+系统找不到指定的路径。
+Synth Design complete | Checksum: 8880eef5
+INFO: [Common 17-83] Releasing license: Synthesis
+107 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:00 ; elapsed = 00:02:13 . Memory (MB): peak = 1898.023 ; gain = 1316.266
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1898.023 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/danny/cs2025_v2-stu/digital_twin/digital_twin.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun May 25 13:43:42 2025...

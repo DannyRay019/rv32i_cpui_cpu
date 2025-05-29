@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_myCPU_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_myCPU" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="82,913.117 ns"></ZoomStartTime>
+      <ZoomEndTime time="82,998.318 ns"></ZoomEndTime>
+      <Cursor1Time time="82,984.117 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="211"></NameColumnWidth>
+      <ValueColumnWidth column_width="211"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="67" />
+   <wvobject fp_name="/tb_myCPU/uut/w_clk_50Mhz" type="logic">
+      <obj_property name="ElementShortName">w_clk_50Mhz</obj_property>
+      <obj_property name="ObjectShortName">w_clk_50Mhz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/w_clk_rst" type="logic">
+      <obj_property name="ElementShortName">w_clk_rst</obj_property>
+      <obj_property name="ObjectShortName">w_clk_rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/pc" type="array">
+      <obj_property name="ElementShortName">pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/instruction" type="array">
+      <obj_property name="ElementShortName">instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/inst_addr" type="array">
+      <obj_property name="ElementShortName">inst_addr[11:0]</obj_property>
+      <obj_property name="ObjectShortName">inst_addr[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/perip_addr" type="array">
+      <obj_property name="ElementShortName">perip_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">perip_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/perip_wen" type="logic">
+      <obj_property name="ElementShortName">perip_wen</obj_property>
+      <obj_property name="ObjectShortName">perip_wen</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/bridge_inst/perip_addr" type="array">
+      <obj_property name="ElementShortName">perip_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">perip_addr[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/perip_wdata" type="array">
+      <obj_property name="ElementShortName">perip_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">perip_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/perip_rdata" type="array">
+      <obj_property name="ElementShortName">perip_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">perip_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/perip_mask" type="array">
+      <obj_property name="ElementShortName">perip_mask[1:0]</obj_property>
+      <obj_property name="ObjectShortName">perip_mask[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group111" type="group">
+      <obj_property name="label">dram</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_myCPU/uut/student_top_inst/bridge_inst/dram_driver_inst/perip_addr" type="array">
+         <obj_property name="ElementShortName">perip_addr[17:0]</obj_property>
+         <obj_property name="ObjectShortName">perip_addr[17:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_myCPU/uut/student_top_inst/bridge_inst/dram_driver_inst/dram_addr" type="array">
+         <obj_property name="ElementShortName">dram_addr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dram_addr[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_myCPU/uut/student_top_inst/bridge_inst/dram_driver_inst/dram_wen" type="logic">
+         <obj_property name="ElementShortName">dram_wen</obj_property>
+         <obj_property name="ObjectShortName">dram_wen</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_myCPU/uut/student_top_inst/bridge_inst/dram_driver_inst/dram_rdata_raw" type="array">
+         <obj_property name="ElementShortName">dram_rdata_raw[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dram_rdata_raw[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_myCPU/uut/student_top_inst/bridge_inst/dram_driver_inst/dout" type="array">
+         <obj_property name="ElementShortName">dout[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dout[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/bridge_inst/cnt_rdata" type="array">
+      <obj_property name="ElementShortName">cnt_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/bridge_inst/counter_inst/cnt_1ms" type="array">
+      <obj_property name="ElementShortName">cnt_1ms[15:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_1ms[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/bridge_inst/counter_inst/cnt_ms" type="array">
+      <obj_property name="ElementShortName">cnt_ms[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_ms[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/bridge_inst/counter_inst/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/bridge_inst/mmio_rdata" type="array">
+      <obj_property name="ElementShortName">mmio_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mmio_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/bridge_inst/dram_rdata" type="array">
+      <obj_property name="ElementShortName">dram_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dram_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/if_inst/pc_inst/pc" type="array">
+      <obj_property name="ElementShortName">pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/if_inst/pc_inst/br_pc" type="array">
+      <obj_property name="ElementShortName">br_pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">br_pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/if_inst/pc_inst/br_sign" type="logic">
+      <obj_property name="ElementShortName">br_sign</obj_property>
+      <obj_property name="ObjectShortName">br_sign</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/hazard_init/flush" type="logic">
+      <obj_property name="ElementShortName">flush</obj_property>
+      <obj_property name="ObjectShortName">flush</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/if_id_inst/if_pc" type="array">
+      <obj_property name="ElementShortName">if_pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">if_pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/if_id_inst/id_pc" type="array">
+      <obj_property name="ElementShortName">id_pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">id_pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/id_inst/id_instr" type="array">
+      <obj_property name="ElementShortName">id_instr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">id_instr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/id_inst/id_pc" type="array">
+      <obj_property name="ElementShortName">id_pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">id_pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/id_inst/u_ctrl/opcode" type="array">
+      <obj_property name="ElementShortName">opcode[6:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/id_inst/u_ctrl/br_type" type="array">
+      <obj_property name="ElementShortName">br_type[2:0]</obj_property>
+      <obj_property name="ObjectShortName">br_type[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/id_inst/id_br_type" type="array">
+      <obj_property name="ElementShortName">id_br_type[2:0]</obj_property>
+      <obj_property name="ObjectShortName">id_br_type[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/u_EX_moment/ex_br_type" type="array">
+      <obj_property name="ElementShortName">ex_br_type[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_br_type[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/u_EX_moment/ex_pc" type="array">
+      <obj_property name="ElementShortName">ex_pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/u_EX_moment/ex_imm_num" type="array">
+      <obj_property name="ElementShortName">ex_imm_num[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_imm_num[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/id_inst/id_rs1" type="array">
+      <obj_property name="ElementShortName">id_rs1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">id_rs1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/id_inst/id_rs2" type="array">
+      <obj_property name="ElementShortName">id_rs2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">id_rs2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/hazard_init/ex_MemToReg" type="array">
+      <obj_property name="ElementShortName">ex_MemToReg[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_MemToReg[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/hazard_init/stall" type="logic">
+      <obj_property name="ElementShortName">stall</obj_property>
+      <obj_property name="ObjectShortName">stall</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/id_inst/id_res1" type="array">
+      <obj_property name="ElementShortName">id_res1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">id_res1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/id_inst/id_res2" type="array">
+      <obj_property name="ElementShortName">id_res2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">id_res2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/id_inst/id_regs_A" type="array">
+      <obj_property name="ElementShortName">id_regs_A[31:0]</obj_property>
+      <obj_property name="ObjectShortName">id_regs_A[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/id_inst/id_regs_B" type="array">
+      <obj_property name="ElementShortName">id_regs_B[31:0]</obj_property>
+      <obj_property name="ObjectShortName">id_regs_B[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/u_EX_moment/ex_rs1" type="array">
+      <obj_property name="ElementShortName">ex_rs1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_rs1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/u_EX_moment/ex_rs2" type="array">
+      <obj_property name="ElementShortName">ex_rs2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_rs2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/u_EX_moment/ex_regs_A" type="array">
+      <obj_property name="ElementShortName">ex_regs_A[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_regs_A[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/u_EX_moment/ex_regs_B" type="array">
+      <obj_property name="ElementShortName">ex_regs_B[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_regs_B[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/id_inst/id_forward_rs1" type="logic">
+      <obj_property name="ElementShortName">id_forward_rs1</obj_property>
+      <obj_property name="ObjectShortName">id_forward_rs1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/id_inst/id_forward_rs2" type="logic">
+      <obj_property name="ElementShortName">id_forward_rs2</obj_property>
+      <obj_property name="ObjectShortName">id_forward_rs2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/u_id_ex_transition/ex_rd_num" type="array">
+      <obj_property name="ElementShortName">ex_rd_num[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_rd_num[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/ex_mm_inst/mm_rd_num" type="array">
+      <obj_property name="ElementShortName">mm_rd_num[4:0]</obj_property>
+      <obj_property name="ObjectShortName">mm_rd_num[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/wb_inst/wb_funct" type="array">
+      <obj_property name="ElementShortName">wb_funct[3:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_funct[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/wb_inst/wb_offset" type="array">
+      <obj_property name="ElementShortName">wb_offset[1:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_offset[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/mm_wb_inst/wb_rd_num" type="array">
+      <obj_property name="ElementShortName">wb_rd_num[4:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_rd_num[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/u_EX_moment/is_true" type="logic">
+      <obj_property name="ElementShortName">is_true</obj_property>
+      <obj_property name="ObjectShortName">is_true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/u_EX_moment/ex_alu_input1" type="array">
+      <obj_property name="ElementShortName">ex_alu_input1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_alu_input1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/u_EX_moment/ex_alu_input2" type="array">
+      <obj_property name="ElementShortName">ex_alu_input2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_alu_input2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/u_EX_moment/ex_alu_pre_A" type="array">
+      <obj_property name="ElementShortName">ex_alu_pre_A[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_alu_pre_A[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/u_EX_moment/ex_alu_pre_B" type="array">
+      <obj_property name="ElementShortName">ex_alu_pre_B[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_alu_pre_B[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/u_EX_moment/ex_alu_A" type="array">
+      <obj_property name="ElementShortName">ex_alu_A[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_alu_A[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/u_EX_moment/ex_alu_B" type="array">
+      <obj_property name="ElementShortName">ex_alu_B[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_alu_B[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/id_inst/id_ALUSrc" type="logic">
+      <obj_property name="ElementShortName">id_ALUSrc</obj_property>
+      <obj_property name="ObjectShortName">id_ALUSrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/u_EX_moment/ex_ALUSrc" type="logic">
+      <obj_property name="ElementShortName">ex_ALUSrc</obj_property>
+      <obj_property name="ObjectShortName">ex_ALUSrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/forward_inst/forwardA" type="array">
+      <obj_property name="ElementShortName">forwardA[1:0]</obj_property>
+      <obj_property name="ObjectShortName">forwardA[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/u_EX_moment/mm_alu_result" type="array">
+      <obj_property name="ElementShortName">mm_alu_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mm_alu_result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/forward_inst/forward_data" type="logic">
+      <obj_property name="ElementShortName">forward_data</obj_property>
+      <obj_property name="ObjectShortName">forward_data</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/mm_wb_inst/wb_rdata" type="array">
+      <obj_property name="ElementShortName">wb_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/wb_inst/w_regs_data" type="array">
+      <obj_property name="ElementShortName">w_regs_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">w_regs_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/Core_cpu/id_inst/u_reg/reg_bank" type="array">
+      <obj_property name="ElementShortName">reg_bank[31:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_bank[31:0][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_myCPU/uut/student_top_inst/bridge_inst/seg_wdata" type="array">
+      <obj_property name="ElementShortName">seg_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">seg_wdata[31:0]</obj_property>
+   </wvobject>
+</wave_config>

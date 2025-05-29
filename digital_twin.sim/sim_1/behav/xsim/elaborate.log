@@ -1,0 +1,160 @@
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/electronic/vivado-23.2/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L dist_mem_gen_v8_0_14 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_myCPU_behav xil_defaultlib.tb_myCPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'id_funct' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/MYCPU.sv:155]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'id_funct' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/MYCPU.sv:180]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 4 for port 'ex_funct' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/MYCPU.sv:201]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 4 for port 'ex_funct' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/MYCPU.sv:224]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 4 for port 'ex_funct' [D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/MYCPU.sv:254]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/MYCPU.sv" Line 3. Module MYCPU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/IF_moment.sv" Line 2. Module IF_moment doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/PC_control.sv" Line 1. Module PC_control doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/ID_moment.sv" Line 2. Module ID_moment doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu_control.sv" Line 1. Module alu_control doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/EX_moment.sv" Line 1. Module EX_moment doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 4. Module alu doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 85. Module adder_alu_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 167. Module adder_single doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 167. Module adder_single doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 167. Module adder_single doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 167. Module adder_single doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 167. Module adder_single doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 167. Module adder_single doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 167. Module adder_single doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 167. Module adder_single doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 167. Module adder_single doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 167. Module adder_single doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 167. Module adder_single doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 167. Module adder_single doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 167. Module adder_single doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 167. Module adder_single doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 167. Module adder_single doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 167. Module adder_single doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 167. Module adder_single doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 167. Module adder_single doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 167. Module adder_single doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 167. Module adder_single doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 167. Module adder_single doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 167. Module adder_single doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 167. Module adder_single doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 167. Module adder_single doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 167. Module adder_single doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 167. Module adder_single doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 167. Module adder_single doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 167. Module adder_single doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 167. Module adder_single doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 167. Module adder_single doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 167. Module adder_single doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/danny/cs2025_v2-stu/digital_twin/digital_twin.srcs/sources_1/imports/new/new2brand/alu.sv" Line 196. Module adder_half doesn't have a timescale but at least one module in design has a timescale.
+INFO: [Common 17-14] Message 'XSIM 43-4099' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUFDS
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=9,CLKIN1...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.pll_clk_wiz
+Compiling module xil_defaultlib.pll
+Compiling module xil_defaultlib.uart(BAUD_RATE=9600)
+Compiling module xil_defaultlib.twin_controller
+Compiling module xil_defaultlib.PC_control
+Compiling module xil_defaultlib.IF_moment
+Compiling module xil_defaultlib.if_id_transition
+Compiling module xil_defaultlib.regs
+Compiling module xil_defaultlib.immgen
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.alu_control
+Compiling module xil_defaultlib.ID_moment
+Compiling module xil_defaultlib.id_ex_transition
+Compiling module xil_defaultlib.adder_half
+Compiling module xil_defaultlib.adder_single
+Compiling module xil_defaultlib.adder_alu_default
+Compiling module xil_defaultlib.sub_alu_default
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.EX_moment
+Compiling module xil_defaultlib.ex_mm_transition
+Compiling module xil_defaultlib.MM_moment
+Compiling module xil_defaultlib.mm_wb_transition
+Compiling module xil_defaultlib.WB_moment
+Compiling module xil_defaultlib.forward
+Compiling module xil_defaultlib.hard_check
+Compiling module xil_defaultlib.MYCPU
+Compiling module dist_mem_gen_v8_0_14.dist_mem_gen_v8_0_14(C_FAMILY="k...
+Compiling module xil_defaultlib.IROM
+Compiling module xil_defaultlib.seg7
+Compiling module xil_defaultlib.display_seg
+Compiling module dist_mem_gen_v8_0_14.dist_mem_gen_v8_0_14(C_FAMILY="k...
+Compiling module xil_defaultlib.DRAM
+Compiling module xil_defaultlib.dram_driver
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.perip_bridge
+Compiling module xil_defaultlib.student_top
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb_myCPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_myCPU_behav

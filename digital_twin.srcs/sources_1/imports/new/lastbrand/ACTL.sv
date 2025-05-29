@@ -1,0 +1,81 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 2024/05/03 11:25:24
+// Design Name: 
+// Module Name: ACTL
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+module ACTL(
+    input  logic [6:0] opcode       ,
+    input  logic [3:0] funct        ,
+    output logic [3:0] ALUControl    
+);
+    // ALU control module
+    always_comb begin
+        ALUControl = 4'b0000;  // 默认加法
+        case (opcode)
+            7'b0110011: begin // R-type
+                case (funct)
+                    4'b0000: ALUControl = 4'b0000; // ADD
+                    4'b1000: ALUControl = 4'b0001; // SUB
+                    4'b0111: ALUControl = 4'b0010; // AND
+                    4'b0110: ALUControl = 4'b0011; // OR
+                    4'b0100: ALUControl = 4'b0100; // XOR
+                    4'b0001: ALUControl = 4'b0101; // SLL
+                    4'b0101: ALUControl = 4'b0110; // SRL
+                    4'b1101: ALUControl = 4'b0111; // SRA
+                    4'b0010: ALUControl = 4'b1000; // SLT
+                    4'b0011: ALUControl = 4'b1001; // SLTU
+                endcase
+            end
+
+            7'b0010011: begin // I-type
+                case (funct[2:0])
+                    3'b000: ALUControl = 4'b0000; // ADDI
+                    3'b111: ALUControl = 4'b0010; // ANDI
+                    3'b110: ALUControl = 4'b0011; // ORI
+                    3'b100: ALUControl = 4'b0100; // XORI
+                    3'b010: ALUControl = 4'b1000; // SLTI
+                    3'b011: ALUControl = 4'b1001; // SLTIU
+                endcase
+                case (funct)
+                    4'b0001: ALUControl = 4'b0101; // SLLI
+                    4'b0101: ALUControl = 4'b0110; // SRLI
+                    4'b1101: ALUControl = 4'b0111; // SRAI
+                endcase
+            end
+
+            7'b1100111: begin // JALR
+                ALUControl = 4'b0000; // 特殊跳转
+            end
+
+            7'b1100011: begin // BEQ, BNE, BLT, BGE
+                case (funct[2:0])
+                    3'b000: ALUControl = 4'b1000; // BEQ => SUB 比较
+                    3'b001: ALUControl = 4'b1001; // BNE => SUB
+                    3'b100: ALUControl = 4'b1010; // BLT => SLT
+                    3'b101: ALUControl = 4'b1011; // BGE => SLT
+                    3'b110: ALUControl = 4'b1100; // BLTU  -> SLTU
+                    3'b111: ALUControl = 4'b1101; // BGEU  -> SLTU
+                endcase
+            end
+            default: ALUControl = 4'b0000;
+        endcase
+    end
+
+
+endmodule

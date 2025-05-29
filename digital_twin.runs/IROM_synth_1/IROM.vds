@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed May 14 20:35:12 2025
+# Process ID: 17696
+# Current directory: D:/danny/cs2025_v2-stu/digital_twin/digital_twin.runs/IROM_synth_1
+# Command line: vivado.exe -log IROM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source IROM.tcl
+# Log file: D:/danny/cs2025_v2-stu/digital_twin/digital_twin.runs/IROM_synth_1/IROM.vds
+# Journal file: D:/danny/cs2025_v2-stu/digital_twin/digital_twin.runs/IROM_synth_1\vivado.jou
+# Running On: LAPTOP-TANMSLN6, OS: Windows, CPU Frequency: 2611 MHz, CPU Physical cores: 12, Host memory: 34070 MB
+#-----------------------------------------------------------
+source IROM.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 567.094 ; gain = 180.527
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: IROM
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 6e66962173536b5c to dir: D:/danny/cs2025_v2-stu/digital_twin/digital_twin.runs/IROM_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file d:/danny/cs2025_v2-stu/digital_twin/digital_twin.cache/ip/2023.2/6/e/6e66962173536b5c/IROM.dcp to D:/danny/cs2025_v2-stu/digital_twin/digital_twin.runs/IROM_synth_1/IROM.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file d:/danny/cs2025_v2-stu/digital_twin/digital_twin.cache/ip/2023.2/6/e/6e66962173536b5c/IROM_sim_netlist.v to D:/danny/cs2025_v2-stu/digital_twin/digital_twin.runs/IROM_synth_1/IROM_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file d:/danny/cs2025_v2-stu/digital_twin/digital_twin.cache/ip/2023.2/6/e/6e66962173536b5c/IROM_sim_netlist.vhdl to D:/danny/cs2025_v2-stu/digital_twin/digital_twin.runs/IROM_synth_1/IROM_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file d:/danny/cs2025_v2-stu/digital_twin/digital_twin.cache/ip/2023.2/6/e/6e66962173536b5c/IROM_stub.v to D:/danny/cs2025_v2-stu/digital_twin/digital_twin.runs/IROM_synth_1/IROM_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file d:/danny/cs2025_v2-stu/digital_twin/digital_twin.cache/ip/2023.2/6/e/6e66962173536b5c/IROM_stub.vhdl to D:/danny/cs2025_v2-stu/digital_twin/digital_twin.runs/IROM_synth_1/IROM_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP IROM, cache-ID = 6e66962173536b5c.
+INFO: [Common 17-206] Exiting Vivado at Wed May 14 20:35:27 2025...
